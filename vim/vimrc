@@ -1,0 +1,35 @@
+set nocompatible
+filetype off
+
+set rtp+=$HOME/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" all about surroundings
+Bundle 'surround.vim'
+
+" realtime keyword completion
+Bundle 'Shougo/neocomplcache'
+let g:neocomplcache_enable_at_startup = 1
+
+" information widget
+Bundle 'Shougo/unite.vim'
+
+Bundle 'kana/vim-fakeclip'
+
+""" Python bundles
+" syntax and style cheker
+Bundle 'nvie/vim-flake8'
+
+" completion
+Bundle 'pythoncomplete'
+
+" module and class doc viewer
+Bundle 'fs111/pydoc.vim'
+
+" refactoring tools
+Bundle 'sontek/rope-vim'
+
+set wildmode=list:longest
+filetype plugin indent on

@@ -1,4 +1,7 @@
 dotfiles
 ========
 
-configuration files
+configuration files and setup scripts.
+
+* python
+* vim
