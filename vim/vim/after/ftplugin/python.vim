@@ -19,7 +19,7 @@ setl formatoptions=q
 set omnifunc=pythoncomplete#Complete
 
 " Tag files
-set tags=$HOME/.tags/python.tag
+" set tags=$HOME/.tags/python.tag
 
 " Flake 8
 " E302: 2blank lines required above function definition
