@@ -19,7 +19,25 @@ let g:neocomplcache_enable_at_startup = 1
 " information widget
 Bundle 'Shougo/unite.vim'
 
+" convert variable name style
+" commands:
+" crc -> hogeHoge
+" crm -> HogeHoge
+" cr_ -> hoge_hoge
+" crs -> hoge_hoge
+" cru -> HOGE_HOGE
+Bundle 'tpope/vim-abolish'
+
 Bundle 'kana/vim-fakeclip'
+
+" treat indent as textobj
+Bundle 'kana/vim-textobj-indent'
+
+" comment out
+Bundle 'tomtom/tcomment_vim'
+
+" reference
+Bundle 'thinca/vim-ref'
 
 Bundle 'vim-scripts/guicolorscheme.vim'
 
@@ -56,10 +74,14 @@ nnoremap <silent> <Space>rv :<C-u>source $MYVIMRC<CR>
 
 set hlsearch
 set incsearch
+nnoremap <ESC><ESC> :nohlsearch<CR>
 
 nnoremap <C-a> 0
 nnoremap <C-e> $
 nnoremap <C-k> d$
+
+vnoremap < <gv
+vnoremap > >gv
 
 """ Unite.vim
 " 起動時にインサートモードで開始
